@@ -1,0 +1,52 @@
+.certification {
+  padding-bottom: 40px;
+  background-color: var(--page-bg);
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 80px;
+  }
+}
+
+.certification-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+
+  p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  hr {
+    width: 147px;
+    height: 1px;
+    background-color: var(--accent);
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 48px;
+
+    hr {
+      width: 90px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    gap: 0;
+
+    p {
+      margin-right: 16px;
+    }
+
+    hr {
+      width: 147px;
+      margin-right: 87px;
+    }
+
+    img {
+      margin-right: 100px;
+    }
+  }
+}
